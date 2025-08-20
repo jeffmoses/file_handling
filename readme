@@ -1,0 +1,23 @@
+Python File Reader and Writer
+Overview
+This is a simple command-line utility written in Python that reads the content of a specified text file, converts the content to uppercase, and then saves the modified text to a new file. The program includes robust error handling to gracefully manage common issues such as a file not being found.
+Features
+File Reading: Reads the entire content of a file.
+Text Transformation: Converts all text to uppercase.
+New File Creation: Creates a new file with a _modified suffix to store the processed data.
+Error Handling: Catches and reports errors if the input file does not exist or cannot be read.
+How to Use
+Save the Code: Save the Python code to a file named file_processor.py.
+Open a Terminal: Navigate to the directory where you saved the file.
+Run the Program: Execute the script from your terminal using the command:
+python file_processor.py
+
+
+Enter Filename: The program will prompt you to enter the name of the file you want to process.
+Example: Enter the filename: my_document.txt
+The program will then read my_document.txt, create a new file named my_document_modified.txt, and write the uppercase content to it.
+Error Handling
+The program uses a try...except block to handle potential issues:
+If the file you enter does not exist, you will receive the message: Error: File not found.
+For any other file-related issues (e.g., permission errors), a general error message will be displayed: Error: Could not read file: [error details]
+This ensures that the program does not crash and provides a clear explanation to the user if an error occurs.
